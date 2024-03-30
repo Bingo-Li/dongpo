@@ -1,6 +1,4 @@
-"""
-flask： web框架，通过flask提供的装饰器@server.route()将普通函数转换为服务
-"""
+# flask： web框架，通过flask提供的装饰器@server.route()将普通函数转换为服务
 import flask
 from dongpo.service import base
 from dongpo import manager

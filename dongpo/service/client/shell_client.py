@@ -6,13 +6,13 @@ from dongpo import config
 # 参考文档：https://blog.51cto.com/u_15168725/2708108
 # 获取贝壳数据服务
 class ShellConfig:
-    name = ""
-    house_url = ""
+    name = ''
+    house_url = ''
     buildArea = 0
     actualArea = 0
     publicShare = 0
     unitPriceLimit = 0
-    feishu_url = ""
+    feishu_url = ''
 
     def __init__(self, name, house_url, buildArea, actualArea, unitPriceLimit, feishu_url):
         self.name = name

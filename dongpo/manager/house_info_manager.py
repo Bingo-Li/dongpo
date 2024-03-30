@@ -13,19 +13,19 @@ def build_house_title(shellConfig):
 # 构建飞书消息体
 def build_house_info(house, num, lastLine):
     return [
-        {"tag": "text",
-         "text": "第" + str(num) + "套-" + house[0]
-                 + "\n详情：" + house[1]
-                 + "\n总价（万）：" + str(house[2])
-                 + "\n均价（元）：" + str(house[3])
-                 + "\n链接："
+        {'tag': 'text',
+         'text': '第' + str(num) + '套-' + house[0]
+                 + '\n详情：' + house[1]
+                 + '\n总价（万）：' + str(house[2])
+                 + '\n均价（元）：' + str(house[3])
+                 + '\n链接：'
          },
-        {"tag": "a",
-         "text": house[7],
-         "href": house[9]
+        {'tag': 'a',
+         'text': house[7],
+         'href': house[9]
          },
-        {"tag": "text",
-         "text": lastLine
+        {'tag': 'text',
+         'text': lastLine
          }
     ]
 
@@ -60,6 +60,6 @@ def query_house_info(shellConfigs):
 
 
 if __name__ == '__main__':
-    # query_house_info(config.test_config_init())
+    query_house_info(config.test_config_init())
     # query_house_info(config.v0_config_init())
-    query_house_info(config.shell_config_init())
+    # query_house_info(config.shell_config_init())
