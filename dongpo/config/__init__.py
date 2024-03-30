@@ -1,4 +1,10 @@
 # 基础配置
+from .privacy_config import username
+from .privacy_config import pwd
+from .privacy_config import my_feishu_url
+from .privacy_config import wenjie_feishu_url
+
+# 通用配置
 from .common_config import black_list
 
 # 基础配置

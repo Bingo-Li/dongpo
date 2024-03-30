@@ -60,5 +60,6 @@ def query_house_info(shellConfigs):
 
 
 if __name__ == '__main__':
-    # query_house_info(my_config.test_config_init())
-    query_house_info(config.v0_config_init())
+    # query_house_info(config.test_config_init())
+    # query_house_info(config.v0_config_init())
+    query_house_info(config.shell_config_init())
