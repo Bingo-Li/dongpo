@@ -16,7 +16,7 @@ schedule.every().sunday.at('08:00').do(manager.query_house_info, config.v1_confi
 schedule.every().sunday.at('09:00').do(manager.query_house_info, config.v2_config_init())
 
 # 客户的任务
-schedule.every().day.at('10:00').do(manager.query_house_info, config.shell_config_init())
+schedule.every().day.at('10:00').do(manager.query_house_info, config.wenjie_config_init())
 
-while True:
-    schedule.run_pending()
+# while True:
+#     schedule.run_pending()

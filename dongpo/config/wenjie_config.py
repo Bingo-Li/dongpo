@@ -2,7 +2,7 @@ from dongpo.service import client
 from dongpo import config
 
 
-def shell_config_init():
+def wenjie_config_init():
     shellConfigs = [
         client.ShellConfig(
             '绿地国际理想城四期-14000',
